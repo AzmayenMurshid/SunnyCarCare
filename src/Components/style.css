@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2&display=swap');
+
+.hoverOpacity{
+    text-decoration: none;
+    color: white;
+}
+
+.hoverOpacity:hover{
+    opacity: 0.7;
+}
+
+.remove_decoration{
+    text-decoration: none;
+    color: white;
+}
+
+.exo{
+    font-family: 'Exo 2', sans-serif;
+    font-size: 2.5em;
+}
+
+.sidebar_active{
+    display: block;
+    animation: display 1.0s;
+
+}
+
+@keyframes display {
+    from{
+        transform: translateX(-50vh)
+    }
+    to{
+        transform: translateX(0)
+    }
+}
+
+.sidebar{
+    display: none;
+}
