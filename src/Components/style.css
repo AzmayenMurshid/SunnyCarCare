@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo+2&display=swap');
 
+
+.nav__text{
+    color: #fff;
+    padding: 10px;
+}
+
 .hoverOpacity{
     text-decoration: none;
     color: white;
@@ -21,6 +27,7 @@
 
 .sidebar_active{
     display: block;
+    position: absolute;
     animation: display 1.0s;
 
 }
@@ -36,4 +43,14 @@
 
 .sidebar{
     display: none;
+}
+
+@media screen and (max-width: 480px){
+    .sidebar_active{
+        position: relative;
+    }
+
+    .schedule_estimate_card{
+        max-width: 100vw;
+    }
 }

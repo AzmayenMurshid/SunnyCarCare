@@ -16,6 +16,7 @@ import CarRepairRoundedIcon from '@mui/icons-material/CarRepairRounded';
 import { ContactPhone } from '@mui/icons-material';
 import CloseRoundedIcon from '@mui/icons-material/CloseRounded';
 import CalendarMonthRoundedIcon from '@mui/icons-material/CalendarMonthRounded';
+import CallIcon from '@mui/icons-material/Call';
 
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
@@ -30,7 +31,6 @@ function Sidebar({clicked}) {
   };
     return (
       <Box
-        position={ "absolute" }
         className = {clicked ? 'sidebar_active' : 'sidebar'} 
         sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
         <List component="nav" aria-label="main mailbox folders">
@@ -54,8 +54,7 @@ function Sidebar({clicked}) {
           </ListItemButton>
           <ListItemButton
             selected={selectedIndex === 2}
-            onClick={(event) => handleListItemClick(event, 2)}
-          >
+            onClick={(event) => handleListItemClick(event, 2)}>
             <ListItemIcon>
               <ContactPhone />
             </ListItemIcon>
@@ -103,20 +102,9 @@ export default function Navigation() {
             sx={{ flexGrow: 1 }}>
             Sunny Car Care
           </Typography>
-          <Button 
-            className='hoverOpacity'
-            color="inherit">
-                <Link className='remove_decoration' to="login">
-                    Login
-                </Link>
-            </Button>
-            <Button 
-            className='hoverOpacity'
-            color="inherit">
-                <Link className='remove_decoration' to="signin">
-                    Sign in
-                </Link>
-            </Button>
+            <CallIcon />
+            <Typography className='nav__text' variant='body1'> Call : (945) 249-1128 </Typography>
+            <Typography className='nav__text' variant='body1'> Address:  </Typography>
         </Toolbar>
       </AppBar>
       <Sidebar clicked={clicked} />

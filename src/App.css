@@ -1,0 +1,42 @@
+.header{
+    position: fixed;
+    margin-left: 25%;
+}
+
+.header__title{
+    font-family: 'Exo 2', sans-serif;
+    font-size: 70px;
+    text-align: center;
+}
+
+.header__subtitle{
+    font-family: 'Exo 2', sans-serif;
+    font-size: 35px;
+    text-align: center;
+}
+
+@media screen and (max-width: 1100px){
+    .header{
+        position: relative;
+        margin-left: 0 auto;
+    }
+    .header__title{
+        text-align: center;
+        font-size: 60px;
+    }
+    .header__subtitle{
+        text-align: center;
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .header{
+        position: relative;
+        margin: 0 auto;
+    }
+    .header__title{
+        font-size: 40px;
+    }
+
+}

@@ -1,17 +1,27 @@
 import Navigation from './Components/Navigation';
+import { Grid } from '@mui/material';
 import {
   createBrowserRouter,
   RouterProvider,
-  Route,
-  Link,
 } from "react-router-dom";
-
+import ScheduleEstimate from './Components/SchedueEstimate';
 import './App.css';
 
-import Login from './Components/Login';
-import Signin from './Components/Signin';
-import ScheduleEstimate from './Components/SchedueEstimate';
-import { Grid } from '@mui/material';
+const Header =  () => {
+  return (
+      <>
+        <div className='header'>
+          <h1 className='header__title'>
+              Sunny Car Care
+          </h1>
+          <p className='header__subtitle'>
+            Collision & Repair
+          </p>
+        </div>
+          
+      </>
+  )
+}
 
 const router = createBrowserRouter([
   {
@@ -24,8 +34,11 @@ const router = createBrowserRouter([
           direction="row"
           alignItems="right"
           justifyContent="right"
-          style={{marginTop: 100, marginLeft: -40}}>
-            <Grid item xs ={12} sm={6} md={4} lg={3} style ={{ display: 'flex' }}>
+          style={{marginTop: 150, }}>
+            <Grid item xs={12} style={{marginTop: 40}}>
+              <Header />
+            </Grid>
+            <Grid item xs ={6} sm={6} md={4} lg={3} style ={{ display: 'flex' }}>
               <ScheduleEstimate />
             </Grid>
         </Grid>
@@ -34,12 +47,12 @@ const router = createBrowserRouter([
     ),
   },
   {
-    path: "/login",
-    element: (<Login />),
+    path: "/services",
+    // element: (<Login />),
   },
   {
-    path: "/signin",
-    element: (<Signin />),
+    path: "/about-us",
+    // element: (<Signin />),
   },
 ]);
 
