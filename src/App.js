@@ -5,7 +5,10 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import ScheduleEstimate from './Components/SchedueEstimate';
+import CardView from './Components/CardView';
+
 import './App.css';
+import Packages from './Components/Packages';
 
 const Header =  () => {
   return (
@@ -29,20 +32,10 @@ const router = createBrowserRouter([
     element: (
       <>
         <Navigation />
-        <Grid container
-          spacing={0}
-          direction="row"
-          alignItems="right"
-          justifyContent="right"
-          style={{marginTop: 150, }}>
-            <Grid item xs={12} style={{marginTop: 40}}>
-              <Header />
-            </Grid>
-            <Grid item xs ={6} sm={6} md={4} lg={3} style ={{ display: 'flex' }}>
-              <ScheduleEstimate />
-            </Grid>
-        </Grid>
-        
+        <Header />
+        <CardView />
+        <Packages />
+        <ScheduleEstimate />
       </>
     ),
   },

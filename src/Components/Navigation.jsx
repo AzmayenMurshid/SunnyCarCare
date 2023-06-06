@@ -100,7 +100,6 @@ export default function Navigation() {
             variant="h6" 
             component="div"
             sx={{ flexGrow: 1 }}>
-            Sunny Car Care
           </Typography>
             <CallIcon />
             <Typography className='nav__text' variant='body1'> Call : (945) 249-1128 </Typography>

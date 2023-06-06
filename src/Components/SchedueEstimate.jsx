@@ -7,7 +7,6 @@ import './style.css';
 export default function ScheduleEstimate() {
     return (
         <>
-        
             <Card className="Schedule_estimate_card">
                 <CardContent>
                     <div style={{ padding: 10 }}>
@@ -17,7 +16,7 @@ export default function ScheduleEstimate() {
                             }}
                             variant="h4" 
                             component={"div"}>
-                                Schedule Estimate
+                                Schedule Appointment
                         </Typography>
                         <Typography
                             style={{
