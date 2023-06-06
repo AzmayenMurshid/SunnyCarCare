@@ -103,7 +103,6 @@ export default function Navigation() {
           </Typography>
             <CallIcon />
             <Typography className='nav__text' variant='body1'> Call : (945) 249-1128 </Typography>
-            <Typography className='nav__text' variant='body1'> Address:  </Typography>
         </Toolbar>
       </AppBar>
       <Sidebar clicked={clicked} />

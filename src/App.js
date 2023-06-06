@@ -1,11 +1,12 @@
 import Navigation from './Components/Navigation';
-import { Grid } from '@mui/material';
+import { Grid, Typography } from '@mui/material';
 import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
 import ScheduleEstimate from './Components/SchedueEstimate';
 import CardView from './Components/CardView';
+import Footer from './Components/Footer';
 
 import './App.css';
 import Packages from './Components/Packages';
@@ -34,8 +35,12 @@ const router = createBrowserRouter([
         <Navigation />
         <Header />
         <CardView />
+        <h1 className='services'>
+          Services
+        </h1>
         <Packages />
         <ScheduleEstimate />
+        <Footer />
       </>
     ),
   },

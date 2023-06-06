@@ -3,7 +3,6 @@ import React from "react";
 
 export default function CardView(){
     const displays = [
-        {title: 'services', url: '/services', image: {}},
         {title: 'contact us', url: '/contact-us', image: {}}, 
         {title: 'get directions', url: '/get-directions', image: {}}, 
         {title: 'daily rentals', url: '/daily-rentals', image: {}},
@@ -15,7 +14,7 @@ export default function CardView(){
                 <Grid style={{}} container alignItems='stretch' spacing={3}>
                 {
                     displays.map((display, index) => (
-                            <Grid item xs={12} sm={6} md={4} lg={3} style = {{}}>
+                            <Grid item xs={12} sm={6} md={4} lg={4} style = {{}}>
                                <Card
                                     className='cardview'
                                     key={index}
@@ -23,6 +22,7 @@ export default function CardView(){
                                         display: 'flex',
                                         flexDirection: 'column',
                                         justifyContent: 'space-between',
+                                        padding: 5,
                                         borderBottom: '10px solid white', }}>
                                         <CardActionArea href={display.url} target="__blank"> 
                                             <CardMedia 

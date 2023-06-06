@@ -67,7 +67,7 @@ export default function Packages(){
   return(
     <>
       {/* <Grid container style={{marginTop: 100}} spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}> */}
-      <Grid style={{marginTop: 50}} container alignItems='stretch' spacing={2}>
+      <Grid style={{marginTop: 0, padding: 5,}} container alignItems='stretch' spacing={2}>
         {
           arr.map((i, item) => (
             // <Grid item xs={2} sm={4} md={4} key={i}>
